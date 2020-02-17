@@ -3,6 +3,8 @@
 
 html,body{
     height: inherit !important;
+    background-image: linear-gradient(to right, #310c78 , #8a3794);
+    color:#fff;
 }
 
 /*
@@ -62,9 +64,10 @@ div#deleteNotice h4 {
     float: right;
     margin: -1em 1em 0 0;
     padding: 0.5em 1em;
-    background-color: #477898;
+    background-color: #5c2969;
     border-radius: 50%;
     color: #fff;
+    border: solid 2px #fff;
 }
 
 p#weekTag span:hover{
@@ -84,7 +87,7 @@ div#dashboardInfo button {
 }
 
 #homeWelcome{
-    margin-top:8em;
+    margin-top:23%;
 }
 
 #homeWelcome h1{
@@ -117,9 +120,6 @@ footer ul li{
 
 .copyright{
     color: #bbb;
-    border-top: solid 1px #dcdcdc;
-    margin-top: 2em;
-    padding-top: 10px;
     font-size: 0.8em;
     text-align: center;
 }
@@ -140,7 +140,7 @@ footer ul li{
 
 
 h1,h2,h3,h4{
-    color:#0c4d78;
+    color:#cacaca;
 }
 
 .form_error{
@@ -175,16 +175,16 @@ body,.off-canvas-content{
 
 
 .shadowRight{
-  box-shadow: 10px 0 5px -8px #888;
+  box-shadow: 10px 0 5px -8px #171616;
   position: fixed;
   padding-top: 2em;
   left: 0;
   color: #fff;
   height: 100%;
-  background-color: #484848;
+  background-color: #2f1c38;
 }
 
-form#location{
+form#location, #crticket, #changeBtn{
   margin-bottom: 2em;
   margin-left: 1em;
 }
@@ -197,16 +197,25 @@ form#location{
   margin:1em 0;
 }
 
+ul.notin li{
+  display: inline;
+}
+
 .shadowRight p{
   margin-left:1em;
 }
 
+.shadowRight h4{
+  margin-bottom: 1em;
+}
+
 .shadowRight img {
-  width: 38%;
+  width: 57%;
   margin: 0 auto;
   display: block;
   padding-bottom: 2em;
 }
+
 
 
 
@@ -345,8 +354,8 @@ table#txtHintHR .button{
 
 
 hr{
-    border-top: solid 1px #ddd;
-    border-bottom: solid 1px #fffdfd;
+  border-top: solid 1px #4b3b4e;
+  border-bottom: solid 1px #100d10;
 }
 
 div#txtHintHR table{
@@ -356,7 +365,7 @@ div#txtHintHR table{
 .tableClr th, div#txtHintHR th{
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #2c658a;
+  background-color: #50295a;
   color: white;
 }
 

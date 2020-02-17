@@ -48,6 +48,10 @@ function getLocData($ld){
             case 'p2':
                 return('dataSearch/p2/data.json');
             break;
+
+            case 'cr':
+                return('dataSearch/cr/data.json');
+            break;
         }
 }
 
@@ -93,6 +97,10 @@ function checkStatus($statcol){
 
                 case 2:
                     return ("<span class='statusColour' style ='background-color: #63bf5d; border: solid 1px #3cb340;'></span>");
+                    break;
+
+                case 3:
+                    return ("<span class='statusColour' style ='background-color: #fff150; border: solid 1px #f7e071;'></span>");
                     break;
             }
 }
@@ -183,6 +191,8 @@ function getAvailableData($l){
 
 
     $ld = getLocData($l);
+    echo $l." -- ".$ld ."// ";
+
     $jsonData = json_decode(file_get_contents($ld));
 
     rsort($jsonData);
@@ -285,7 +295,9 @@ if(isset($_REQUEST['l']) && !empty($_REQUEST['l'])){
     //get row data
     $l_input = htmlentities($_REQUEST['l']);
 
+
     $_SESSION['pStatus'] = $l_input;
+
 
     getAvailableData($l_input);
 

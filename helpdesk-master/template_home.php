@@ -110,9 +110,15 @@ function closeDetails(){
 
 
 
-function  showRows(loc){
+
 
     $(document).ready(function(){
+
+
+
+      $('.choices').on('click',function(){
+
+      var loc =$(this).attr('data-ptype');
 
       $('#userData').hide();
       $('#weekTag').show('slow');
@@ -140,8 +146,12 @@ function  showRows(loc){
 
         }
 
+      });
+
+      
+
     });
-}
+
 
 
 </script>
@@ -155,8 +165,8 @@ function  showRows(loc){
                     <div class="data-panel criteria" id="dataRows">
 
                         <div id="homeWelcome">
-                          <img src="<?php get_theme_url() ?>/img/nhs24logo.jpg" alt="NHS 24 logo"/>
-                          <h1>Change desk</h1>
+                          <img src="<?php get_theme_url() ?>/img/cdlogo.png" alt="change desk logo"/>
+                         
                         </div>
 
 
